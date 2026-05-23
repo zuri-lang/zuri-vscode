@@ -1,14 +1,14 @@
 {
-    "name": "blade-vscode",
-    "displayName": "blade-vscode",
-    "description": "Support for the Blade programming language",
-    "publisher": "blade-lang",
+    "name": "zuri-vscode",
+    "displayName": "zuri-vscode",
+    "description": "Support for the Zuri programming language",
+    "publisher": "zuri-lang",
     "author": "Ore Richard Muyiwa",
-    "version": "0.6.0",
-    "homepage": "https://github.com/blade-lang/blade-vscode",
+    "version": "0.1.0",
+    "homepage": "https://github.com/zuri-lang/zuri-vscode",
     "repository": {
         "type": "git",
-        "url": "https://github.com/blade-lang/blade-vscode.git"
+        "url": "https://github.com/zuri-lang/zuri-vscode.git"
     },
     "icon": "img/icon.png",
     "engines": {
@@ -21,29 +21,29 @@
     ],
     "main": "./extension.js",
     "activationEvents": [
-        "onLanguage:bladeLang",
-        "onDebugResolve:bladeLang",
-        "onCommand:bladeLang.checkBladeInstalled"
+        "onLanguage:zuri",
+        "onDebugResolve:zuri",
+        "onCommand:zuri.checkZuriInstalled"
     ],
     "contributes": {
         "themes": [
             {
-                "label": "Blade",
+                "label": "Zuri",
                 "uiTheme": "vs-dark",
-                "path": "./themes/BladeLang-color-theme.json"
+                "path": "./themes/zuri-color-theme.json"
             }
         ],
         "languages": [
             {
-                "id": "bladeLang",
+                "id": "zuri",
                 "aliases": [
-                    "Blade",
-                    "blade"
+                    "Zuri",
+                    "zuri"
                 ],
                 "extensions": [
-                    ".b"
+                    ".zu"
                 ],
-                "configuration": "./language/bladeLang-configuration.json",
+                "configuration": "./language/zuri-configuration.json",
                 "icon": {
                     "light": "./img/icon.png",
                     "dark": "./img/icon.png"
@@ -52,29 +52,29 @@
         ],
         "grammars": [
             {
-                "language": "bladeLang",
-                "scopeName": "source.bladeLang",
-                "path": "./language/syntaxes/bladeLang.tmLanguage.json"
+                "language": "zuri",
+                "scopeName": "source.zuri",
+                "path": "./language/syntaxes/zuri.tmLanguage.json"
             }
         ],
         "commands": [
             {
-                "command": "bladeLang.checkBladeInstalled",
-                "title": "Check Blade Installation",
-                "category": "Blade"
+                "command": "zuri.checkZuriInstalled",
+                "title": "Check Zuri Installation",
+                "category": "Zuri"
             }
         ],
         "menus": {
             "commandPalette": [
                 {
-                    "command": "bladeLang.checkBladeInstalled",
-                    "when": "editorLangId == bladeLang"
+                    "command": "zuri.checkZuriInstalled",
+                    "when": "editorLangId == zuri"
                 }
             ]
         },
         "snippets": [
             {
-                "language": "bladeLang",
+                "language": "zuri",
                 "path": "./snippets/snippets.json"
             }
         ]

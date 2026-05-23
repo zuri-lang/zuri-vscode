@@ -1,5 +1,5 @@
 {
-	"name": "BladeLang",
+	"name": "Zuri",
 	"type": "dark",
 	"colors": {
 		"editor.background": "#1E1E1E",
@@ -363,7 +363,7 @@
 		},
 		{
 			"scope": [
-				"punctuation.semicolon.bladeLang"
+				"punctuation.semicolon.zuri"
 			],
 			"settings": {
 				"fontStyle": "italic",
@@ -591,8 +591,8 @@
 		}
 	],
 	"semanticTokenColors": {
-		"newOperator":"#C586C0",
-		"stringLiteral":"#ce9178",
+		"newOperator": "#C586C0",
+		"stringLiteral": "#ce9178",
 		"customLiteral": "#DCDCAA",
 		"numberLiteral": "#b5cea8",
 	}

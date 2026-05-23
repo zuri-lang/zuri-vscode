@@ -1,25 +1,25 @@
 {
   "fileTypes": [
-    "bladeLang"
+    "zuri"
   ],
   "foldingStartMarker": "\\{\\s*$",
   "foldingStopMarker": "^\\s*\\}",
-  "name": "Blade",
+  "name": "Zuri",
   "patterns": [
     {
       "begin": "^(\\w|\\s)*\\b(import)\\b",
       "beginCaptures": {
         "0": {
-          "name": "keyword.other.import.bladeLang"
+          "name": "keyword.other.import.zuri"
         }
       },
       "end": "\n",
       "endCaptures": {
         "0": {
-          "name": "punctuation.terminator.bladeLang"
+          "name": "punctuation.terminator.zuri"
         }
       },
-      "name": "meta.declaration.bladeLang",
+      "name": "meta.declaration.zuri",
       "patterns": [
         {
           "include": "#strings"
@@ -29,7 +29,7 @@
         },
         {
           "match": "\\b(as)\\b",
-          "name": "keyword.other.import.bladeLang"
+          "name": "keyword.other.import.zuri"
         }
       ]
     },
@@ -59,7 +59,7 @@
           "match": "(@[a-zA-Z_]+)",
           "captures": {
             "0": {
-              "name": "variable.name.source.bladeLang"
+              "name": "variable.name.source.zuri"
             }
           }
         }
@@ -70,11 +70,11 @@
         {
           "captures": {
             "0": {
-              "name": "punctuation.definition.comment.bladeLang"
+              "name": "punctuation.definition.comment.zuri"
             }
           },
           "match": "\/\\*\\*\/",
-          "name": "comment.block.empty.bladeLang"
+          "name": "comment.block.empty.zuri"
         },
         {
           "include": "#comments-doc-oldschool"
@@ -92,7 +92,7 @@
         {
           "begin": "\/\\*",
           "end": "\\*\/",
-          "name": "comment.block.documentation.bladeLang",
+          "name": "comment.block.documentation.zuri",
           "patterns": [
             {
               "include": "#comments-doc-oldschool"
@@ -117,7 +117,7 @@
               "include": "#decorators"
             }
           ],
-          "name": "comment.block.documentation.bladeLang"
+          "name": "comment.block.documentation.zuri"
         }
       ]
     },
@@ -129,7 +129,7 @@
         {
           "captures": {
             "1": {
-              "name": "comment.line.double-slash.bladeLang"
+              "name": "comment.line.double-slash.zuri"
             }
           },
           "match": "((#).*)$"
@@ -141,7 +141,7 @@
         {
           "begin": "\/\\*",
           "end": "\\*\/",
-          "name": "comment.block.bladeLang",
+          "name": "comment.block.zuri",
           "patterns": [
             {
               "include": "#comments-block"
@@ -154,15 +154,15 @@
       "patterns": [
         {
           "match": "(@[a-zA-Z0-9_]+)",
-          "name": "storage.type.annotation.bladeLang"
+          "name": "storage.type.annotation.zuri"
         },
         {
           "match": "([a-zA-Z0-9_]+:)",
-          "name": "meta.structure.dictionary.key.bladeLang"
+          "name": "meta.structure.dictionary.key.zuri"
         },
         {
           "match": "('|\")([\\/~@])((?![*+?])(?:[^\\r\\n\\[\\/\\\\]|\\\\.|\\[(?:[^\\r\\n\\]\\\\]|\\\\.)*\\])+)\\2([imsxuADUJ]+)?\\1",
-          "name": "string.regexp.bladeLang"
+          "name": "string.regexp.zuri"
         }
       ]
     },
@@ -170,25 +170,25 @@
       "patterns": [
         {
           "match": "(?<!\\$)\\b(true|false|nil)\\b(?!\\$)",
-          "name": "constant.language.bladeLang"
+          "name": "constant.language.zuri"
         },
         {
           "match": "((?<!\\$)\\b(self|parent)\\b(?!\\$)|(__[a-zA-Z_0-9]+__))",
-          "name": "variable.language.bladeLang"
+          "name": "constant.storage.zuri"
         },
         {
           "match": "(?<!\\$)\\b((0b[0-1]*)|(0c[0-7]*)|(0x[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)\\b(?!\\$)",
-          "name": "constant.numeric.bladeLang"
+          "name": "constant.numeric.zuri"
         },
         {
           "match": "(?<![a-zA-Z0-9_$])([_$]*[A-Z][a-zA-Z0-9_$]*)",
-          "name": "support.class.bladeLang"
+          "name": "support.class.zuri"
         },
         {
           "match": "([_$]*[a-z][a-zA-Z0-9_$]*)\\s*\\(",
           "captures": {
             "1": {
-              "name": "entity.name.function.bladeLang"
+              "name": "entity.name.function.zuri"
             }
           }
         }
@@ -198,71 +198,71 @@
       "patterns": [
         {
           "match": "(?<!\\$)\\bas\\b(?!\\$)",
-          "name": "keyword.cast.bladeLang"
+          "name": "keyword.cast.zuri"
         },
         {
           "match": "(?<!\\$)\\b(raise|catch)\\b(?!\\$)",
-          "name": "keyword.control.catch-exception.bladeLang"
+          "name": "keyword.control.catch-exception.zuri"
         },
         {
           "match": "(?<!\\$)\\b(break|when|continue|default|do|else|for|if|in|return|using|while|iter)\\b(?!\\$)",
-          "name": "keyword.control.bladeLang"
+          "name": "keyword.control.zuri"
         },
         {
           "match": "(?<!\\$)\\b(or|and|assert)\\b(?!\\$)",
-          "name": "keyword.control.boolean.bladeLang"
+          "name": "keyword.control.boolean.zuri"
         },
         {
           "match": "(?<!\\$)\\b(var|class|def)\\b(?!\\$)",
-          "name": "keyword.declaration.bladeLang"
+          "name": "keyword.declaration.zuri"
         },
         {
           "match": "(?<!\\$)\\b(is\\!?)\\b(?!\\$)",
-          "name": "keyword.operator.bladeLang"
+          "name": "keyword.operator.zuri"
         },
         {
           "match": "\\?\\?",
-          "name": "keyword.operator.conditional.bladeLang"
+          "name": "keyword.operator.conditional.zuri"
         },
         {
           "match": "(<<|>>|~|\\^|\\||&)",
-          "name": "keyword.operator.bitwise.bladeLang"
+          "name": "keyword.operator.bitwise.zuri"
         },
         {
           "match": "((&|\\^|\\||<<|>>?)=)",
-          "name": "keyword.operator.assignment.bitwise.bladeLang"
+          "name": "keyword.operator.assignment.bitwise.zuri"
         },
         {
           "match": "(==|!=|<<?=?|>>?=?|(\\.\\.\\.))",
-          "name": "keyword.operator.comparison.bladeLang"
+          "name": "keyword.operator.comparison.zuri"
         },
         {
           "match": "(([+*/%-]|\\~)=)",
-          "name": "keyword.operator.assignment.arithmetic.bladeLang"
+          "name": "keyword.operator.assignment.arithmetic.zuri"
         },
         {
           "match": "(=)",
-          "name": "keyword.operator.assignment.bladeLang"
+          "name": "keyword.operator.assignment.zuri"
         },
         {
           "match": "(\\-\\-|\\+\\+)",
-          "name": "keyword.operator.increment-decrement.bladeLang"
+          "name": "keyword.operator.increment-decrement.zuri"
         },
         {
           "match": "(\\-|\\+|\\*|\\/|\\~\\/|%|\\*\\*)",
-          "name": "keyword.operator.arithmetic.bladeLang"
+          "name": "keyword.operator.arithmetic.zuri"
         },
         {
           "match": "(!)",
-          "name": "keyword.operator.binary.bladeLang"
+          "name": "keyword.operator.binary.zuri"
         },
         {
           "match": "((?<!\\$)\\b(static)\\b(?!\\$))|(@(?=(\\s*[({])))",
-          "name": "storage.modifier.bladeLang"
+          "name": "storage.modifier.zuri"
         },
         {
           "match": "(?<!\\$)\\b(?:echo)\\b(?!\\$)",
-          "name": "storage.type.primitive.bladeLang"
+          "name": "storage.type.primitive.zuri"
         }
       ]
     },
@@ -271,17 +271,17 @@
         {
           "captures": {
             "2": {
-              "name": "variable.parameter.bladeLang"
+              "name": "variable.parameter.zuri"
             },
             "3": {
-              "name": "variable.parameter.bladeLang"
+              "name": "variable.parameter.zuri"
             }
           },
           "match": "\\$(\\{([^{}]+)\\})"
         },
         {
           "match": "\\\\.",
-          "name": "constant.character.escape.bladeLang"
+          "name": "constant.character.escape.zuri"
         }
       ]
     },
@@ -290,7 +290,7 @@
         {
           "begin": "(?<!\\|r)\"",
           "end": "\"",
-          "name": "string.interpolated.double.bladeLang",
+          "name": "string.interpolated.double.zuri",
           "patterns": [
             {
               "match": "\\n",
@@ -304,7 +304,7 @@
         {
           "begin": "(?<!\\|r)'",
           "end": "'",
-          "name": "string.interpolated.single.bladeLang",
+          "name": "string.interpolated.single.zuri",
           "patterns": [
             {
               "match": "\\n",
@@ -321,22 +321,22 @@
       "patterns": [
         {
           "match": ";",
-          "name": "punctuation.semicolon.bladeLang"
+          "name": "punctuation.semicolon.zuri"
         },
         {
           "match": ",",
-          "name": "punctuation.comma.bladeLang"
+          "name": "punctuation.comma.zuri"
         },
         {
           "match": "\n",
-          "name": "punctuation.terminator.bladeLang"
+          "name": "punctuation.terminator.zuri"
         },
         {
           "match": "\\.",
-          "name": "punctuation.dot.bladeLang"
+          "name": "punctuation.dot.zuri"
         }
       ]
     }
   },
-  "scopeName": "source.bladeLang"
+  "scopeName": "source.zuri"
 }

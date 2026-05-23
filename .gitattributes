@@ -1,5 +1,5 @@
-*.b linguist-detectable
-*.b linguist-language=Blade
+*.zu linguist-detectable
+*.zu linguist-language=Zuri
 
 # Set default behavior to automatically normalize line endings.
 * text=auto

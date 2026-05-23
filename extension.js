@@ -14,18 +14,18 @@ function activate(context) {
 
   // Use the console to output diagnostic information (console.log) and errors (console.error)
   // This line of code will only be executed once when your extension is activated
-  console.log('Congratulations, your extension "Blade" is now active!');
+  console.log('Congratulations, your extension "Zuri" is now active!');
 
   // The command has been defined in the package.json file
   // Now provide the implementation of the command with  registerCommand
   // The commandId parameter must match the command field in package.json
-  let disposable = vscode.commands.registerCommand('bladeLang.checkBladeInstalled', function () {
-    commandExists('blade')
+  let disposable = vscode.commands.registerCommand('zuri.checkZuriInstalled', function () {
+    commandExists('zuri')
       .then(exists => {
         if (exists) {
-          vscode.window.showInformationMessage('Congratulations! Blade programming language is installed.');
+          vscode.window.showInformationMessage('Congratulations! Zuri programming language is installed.');
         } else {
-          vscode.window.showErrorMessage('Blade programming language is not installed.');
+          vscode.window.showErrorMessage('Zuri programming language is not installed.');
         }
       })
       .catch(err => {

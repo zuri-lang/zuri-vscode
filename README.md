@@ -1,13 +1,13 @@
-# Blade VSCode Extension
+# Zuri VSCode Extension
 
-This is a minimalistic Visual Studio Code extension for the Blade programming language.
+This is a minimalistic Visual Studio Code extension for the Zuri programming language.
 
 
 ## Features
 
 1. Syntax Highlighting
 2. Color Theme
-3. Check if Blade is installed or not.
+3. Check if Zuri is installed or not.
 
 
 ## Planned Features
@@ -15,7 +15,7 @@ This is a minimalistic Visual Studio Code extension for the Blade programming la
 1. Autocomplete
 2. Intelliscence
 3. Refactorings
-4. Running Blade snippets and files.
+4. Running Zuri snippets and files.
 5. Go to functions
 6. Find references
 7. Format document
