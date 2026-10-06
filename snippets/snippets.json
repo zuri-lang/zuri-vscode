@@ -85,7 +85,7 @@
   },
   "catch": {
     "prefix": "catch",
-    "body": " {\n  $1\n} as $2\n",
+    "body": "catch {\n  $1\n} as $2\n",
     "description": "catch block",
     "scope": "source.zuri"
   }

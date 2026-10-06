@@ -4,7 +4,7 @@
     "description": "Support for the Zuri programming language",
     "publisher": "zuri-lang",
     "author": "Ore Richard Muyiwa",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "homepage": "https://github.com/zuri-lang/zuri-vscode",
     "repository": {
         "type": "git",

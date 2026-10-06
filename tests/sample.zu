@@ -18,12 +18,14 @@ class Scone {
   }
 }
 
+const x = 50
+
 var scone = Scone()
 scone.topping('berries', 'cream')
 
 class Person {
   var age = 10
-  static var id = 2001
+  static var id = 2_001
 
   Person(name) {
     self.name = name
